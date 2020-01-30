@@ -9,11 +9,15 @@
 </head>
 <body>
 
-    <!-- thanks.html?firstName=blah        -->
-    <form action="./thanks.html">
-        <label for="firstName">First name
-            <input id="firstName" type="text" placeholder="Maximus" name="firstName">
+    <form action="#">
+        <label for="firstName">First name *
+            <input id="firstName" type="text" placeholder="Maximus" name="firstName" required>
         </label>
+
+        <label for="email">E-mail
+            <input id="email" type="email" placeholder="maximus@mustermann.org" name="email">
+        </label>
+        
         <input type="submit">
     </form>
     
@@ -21,6 +25,7 @@
         <p>Please <a href="https://www.enable-javascript.com" target="_blank" rel="noopener">enable JavaScript</a> for a better experience</p>
     </noscript>
 
+    <script src="./third-party/validator.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
